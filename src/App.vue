@@ -1,5 +1,9 @@
 <template>
   <el-container>
+    <!-- 网站标题 -->
+    <!-- <el-header>
+      <h1 class="site-title">脑！缠！杯！</h1>
+    </el-header> -->
 
     <!-- 抽取标题和按钮 -->
     <el-main>
@@ -9,7 +13,6 @@
           type="primary"
           size="large"
           @click="getRandomCharacters"
-          :disabled="hasDrawn"
           icon="Refresh"
         >
           {{ hasDrawn ? "重抽" : "抽取" }}
@@ -73,7 +76,7 @@ export default {
           this.currentCharacters.push(character);
         }
       }
-      this.hasDrawn = true; // 标记为已抽取
+      this.hasDrawn = true; // 抽取后状态设为已抽取
     },
     replaceCharacter(name) {
       const availableCharacters = this.characters.filter(

@@ -4,7 +4,7 @@ export const characters = [
     {name : "煌"   , url:"./portrait/char_017_huang_2.png"},
     {name : "浊心斯卡蒂", url:"./portrait/char_1012_skadi2_2.png"},
     {name : "假日威龙陈", url:"./portrait/char_1013_chen2_2.png"},
-    {name : "耀骑士临光", url:"./portrait/char_1016_nearl2_2.png"},
+    {name : "耀骑士临光", url:"./portrait/char_1014_nearl2_2.png"},
     {name : "纯烬艾雅法拉", url:"./portrait/char_1016_agoat2_2.png"},
     {name : "维娜·维多利亚", url:"./portrait/char_1019_siege2_2.png"},
     {name : "焰影苇草", url:"./portrait/char_1020_reed2_2.png"},

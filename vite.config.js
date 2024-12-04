@@ -1,8 +1,12 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: "/random-arknights-chara/"
-})
+  resolve: {
+    alias: {
+      '@': '/src', // 确保 @ 指向 src 目录
+    },
+  },
+  base: '/random-arknights-chara/', // 设置你的项目路径
+});

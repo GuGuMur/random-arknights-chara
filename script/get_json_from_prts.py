@@ -1,6 +1,7 @@
 import requests
 import json
 import os
+from pathlib import Path
 
 def fetch_operator_data(api_url, output_file):
     params = {
@@ -66,63 +67,15 @@ def fetch_operator_data(api_url, output_file):
     except json.JSONDecodeError as e:
         print(f"JSON 解析错误: {e}")
 
-def download_file(api_url, file_name, output_dir):
-    params = {
-        'action': 'query',
-        'titles': f'File:{file_name}',
-        'prop': 'imageinfo',
-        'iiprop': 'url',
-        'format': 'json'
-    }
-    try:
-        response = requests.get(api_url, params=params)
-        response.raise_for_status()
-        data = response.json()
-        pages = data.get('query', {}).get('pages', {})
-        for page in pages.values():
-            if 'imageinfo' in page:
-                file_url = page['imageinfo'][0]['url']
-                # 下载文件
-                file_path = os.path.join(output_dir, file_name)
-                with requests.get(file_url, stream=True) as r:
-                    r.raise_for_status()
-                    with open(file_path, 'wb') as f:
-                        for chunk in r.iter_content(chunk_size=8192):
-                            f.write(chunk)
-                print(f"文件已下载: {file_path}")
-                return
-        print(f"文件 {file_name} 未找到")
-    except requests.exceptions.RequestException as e:
-        print(f"下载文件 {file_name} 时出错: {e}")
-
-def batch_download_images(api_url, operator_list, output_dir):
-    os.makedirs(output_dir, exist_ok=True)  # 确保输出目录存在
-    for operator in operator_list:
-        name = operator.get("干员")
-        rarity = operator.get("稀有度", 0)
-        suffix = "_1.png" if int(rarity) <= 3 else "_2.png"  # 根据稀有度选择文件后缀
-        for prefix in ["半身像", "头像"]:
-            if prefix == "头像" and suffix == "_1.png":
-                suffix = ".png"
-            file_name = f"{prefix}_{name}{suffix}"
-            file_path = os.path.join(output_dir, file_name)
-            if not os.path.exists(file_path):  # 检查是否已经下载过
-                download_file(api_url, file_name, output_dir)
-            else:
-                print(f"文件已存在，跳过下载: {file_path}")
-
 if __name__ == "__main__":
     # MediaWiki API 地址
     api_url = "https://prts.wiki/api.php"
     
     # 输出的 JSON 文件名
-    json_output = "operator_data.json"
+    json_output = Path(__file__).parent.parent / "src" / "assets" / "operator_data.json"
     
     # 图片下载目录
-    image_output_dir = "./public/img"
+    image_output_dir = Path(__file__).parent.parent / "public" / "img"
     
     # 获取干员数据
     operators = fetch_operator_data(api_url, json_output)
-    if operators:
-        # 下载图片
-        batch_download_images(api_url, operators, image_output_dir)

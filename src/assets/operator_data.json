@@ -3767,7 +3767,7 @@
         "战术规划": "优良",
         "战斗技巧": "标准",
         "源石技艺适应性": "优良",
-        "特性": "攻击造成&lt;span style=&quot;color:#00B0FF;&quot;&gt;法术伤害&lt;/span&gt;，且会在&lt;span style=&quot;color:#00B0FF;&quot;&gt;4&lt;/span&gt;个敌人间跳跃，每次跳跃伤害降低15%并造成短暂&lt;span class=&quot;mc-tooltips&quot;&gt;&lt;span class=&quot;term&quot; style=&quot;text-decoration:underline #222;white-space:nowrap;text-shadow: 0 0 1px;color:#222;cursor:help;&quot;&gt;停顿&lt;/span&gt;&lt;span style=&quot;display:none&quot; data-size=&quot;350&quot;&gt;&lt;strong&gt;术语: 停顿&lt;/strong&gt;&lt;br&gt;移动速度降低80%&lt;/span&gt;&lt;/span&gt;(0.5s)",
+        "特性": "攻击造成&lt;span style=&quot;color:#00B0FF;&quot;&gt;法术伤害&lt;/span&gt;，且会在&lt;span style=&quot;color:#00B0FF;&quot;&gt;4&lt;/span&gt;个敌人间跳跃，每次跳跃伤害降低15%并造成短暂&lt;span class=&quot;mc-tooltips&quot;&gt;&lt;span class=&quot;term&quot; style=&quot;text-decoration:underline ;white-space:nowrap;text-shadow: 0 0 1px;color:inherit;cursor:help;&quot;&gt;停顿&lt;/span&gt;&lt;span style=&quot;display:none&quot; data-size=&quot;350&quot;&gt;&lt;strong&gt;术语: 停顿&lt;/strong&gt;&lt;br&gt;移动速度降低80%&lt;/span&gt;&lt;/span&gt;(0.5s)",
         "干员序号": "189",
         "子职业": "链术师",
         "国家": "萨尔贡",

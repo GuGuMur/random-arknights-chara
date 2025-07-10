@@ -10834,7 +10834,7 @@
         "战术规划": "普通",
         "战斗技巧": "标准",
         "源石技艺适应性": "普通",
-        "特性": "&lt;span class=&quot;mc-tooltips&quot;&gt;&lt;span class=&quot;term&quot; style=&quot;text-decoration:underline ;white-space:nowrap;text-shadow: 0 0 1px;color:inherit;cursor:help;&quot;&gt;起飞&lt;/span&gt;&lt;span style=&quot;display:none&quot; data-size=&quot;350&quot;&gt;&lt;strong&gt;术语: 起飞&lt;/strong&gt;&lt;br&gt;不阻挡地面敌人且不会被地面敌人攻击，可以阻挡飞行敌人&lt;br/&gt;※包含&lt;span class=&quot;mc-tooltips&quot;&gt;[[异常效果|机动]]&lt;span style=&quot;display:none&quot; data-size=&quot;350&quot;&gt;&lt;strong&gt;异常效果: 机动&lt;/strong&gt;&lt;br&gt;无法被敌对阵营中非飞行单位选中（可选性效果）&lt;/span&gt;&lt;/span&gt;（无法被敌对阵营的地面单位选中），可以阻挡近地悬浮单位&lt;br/&gt;※起飞的干员并非真正的飞行单位，不受攻击是否对空影响&lt;/span&gt;&lt;/span&gt;后能够阻挡2个飞行敌人",
+        "特性": "&lt;span class=&quot;mc-tooltips&quot;&gt;&lt;span class=&quot;term&quot; style=&quot;text-decoration:underline ;white-space:nowrap;text-shadow: 0 0 1px;color:inherit;cursor:help;&quot;&gt;起飞&lt;/span&gt;&lt;span style=&quot;display:none&quot; data-size=&quot;350&quot;&gt;&lt;strong&gt;术语: 起飞&lt;/strong&gt;&lt;br&gt;不阻挡地面敌人且不会被地面敌人攻击，可以阻挡飞行敌人&lt;br/&gt;※包含&lt;span class=&quot;mc-tooltips&quot;&gt;[[异常效果|地面规避]]&lt;span style=&quot;display:none&quot; data-size=&quot;350&quot;&gt;&lt;strong&gt;异常效果: 地面规避&lt;/strong&gt;&lt;br&gt;无法被行动方式为地面的敌对阵营单位选中（可选性效果）&lt;br&gt;※行动方式默认为地面，因此规避对象包括绝大部分角色类单位（干员、装置等）。&lt;/span&gt;&lt;/span&gt;（无法被敌对阵营的地面单位选中），可以阻挡近地悬浮单位&lt;br/&gt;※起飞的干员并非真正的飞行单位，不受攻击“是否对空”的影响&lt;/span&gt;&lt;/span&gt;后能够阻挡2个飞行敌人",
         "干员序号": "375",
         "子职业": "巡空者",
         "国家": "哥伦比亚",
